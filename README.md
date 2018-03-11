@@ -1,4 +1,6 @@
-# LeetCode
-Solutions for LeetCode Questions.
 
-# Level 1 Algorithms Questions
+
+# charanvm8
+Combination of Algos and DS
+
+# This repo is ready to contribute
