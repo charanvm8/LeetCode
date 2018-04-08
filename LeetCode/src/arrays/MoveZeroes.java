@@ -2,23 +2,18 @@ package arrays;
 
 public class MoveZeroes {
 	public static void moveZeroes(int[] nums) {
-		if(nums.length<2 || nums==null) {
+		if(nums==null || nums.length==0) {
 			return;
 		}
-        int zeroPos=0;
-        Boolean numFound=true;
-        for(int i=0;i<nums.length;i++) {
-        	if(nums[i]==0 && numFound) {
-        		numFound=false;
-        		zeroPos=i;
-        	}
-        	else if(nums[i]!=0){
-        		numFound=true;
-        		nums[zeroPos]=nums[i];
-        		nums[i]=0;
-        		i=zeroPos;
-        	}
-        }
+		int j=0;
+		for(int i=0;i<nums.length;i++) {
+			if(nums[i]!=0) {
+				int temp=nums[j];
+				nums[j]=nums[i];
+				nums[i]=temp;
+				j++;
+			}
+		}
     }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
