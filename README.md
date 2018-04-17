@@ -8,6 +8,7 @@ Combination of Algos and DS
 
 #### Bit Manipulation
 #### BST
+#### Binary Search
 
 
 
